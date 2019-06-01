@@ -1,0 +1,325 @@
+/*********** GENERAL ***********/
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.6rem;
+}
+
+
+a {
+	text-decoration: none;
+	font-size: 1.4rem;
+	color: #000;
+}
+
+
+.btn {
+	display: inline-block;
+	background: #F5A623;
+	padding: 12px 24px;
+	color: #fff;
+	text-transform: uppercase;
+	border: 0;
+	transition: background .3s;
+	border-radius: 50px;
+}
+
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.active {
+	background: #0ACE99;
+	border-radius: 3px;
+}
+
+img {
+	width: 100%;
+}
+
+.title {
+	font-size: 2.2rem;
+}
+
+main {
+	min-height: calc(100vh - 138.5px - 104px);
+}
+
+
+
+
+/*********** HEADER ***********/
+
+header {
+	background: #0ACE99;
+	text-align: center;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+header .logo-container {
+	padding: 20px;
+}
+
+header img {
+	width: 120px;
+}
+
+/*********** NAVIGATION ***********/
+
+
+nav {
+	background: #0d9b75;
+	padding: 10px;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav li a {
+	color: #fff;
+	display: inline-block;
+	padding: 5px 10px;
+	text-transform: uppercase;
+}
+
+
+
+#hero {
+	padding-top: 70px;
+	position: relative;
+}
+
+#hero .hero-caption {
+	text-align: center;
+	padding: 140px 20px;
+}
+
+
+
+
+/************ GALLERY **********/
+
+#gallery {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#gallery img {
+	width: 100%;
+}
+
+#gallery .item {
+	flex: 0 1 50%;
+	padding: 15px;
+	position: relative;
+}
+
+
+#gallery .caption {
+	background: #f0f0f0;
+	padding: 10px;
+}
+
+#gallery .caption p {
+	margin: 0;
+}
+
+#gallery .picture {
+	line-height: 0;
+}
+
+#gallery .caption img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30px;
+}
+
+/****** ABOUT ********/
+
+#about img {
+	border-radius: 100%;
+	padding: 25px 0;
+}
+
+/************ CONTACT **********/
+
+#contact ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+#contact li {
+	padding: 5px 0;
+}
+
+#contact .material-icons {
+	float: left;
+}
+
+#contact .contacts a {
+	margin: 3px 0 0 5px;
+	display: inline-block;
+}
+
+
+/***** FOOTER ********/
+
+footer.main {
+	text-align: center;
+	padding: 15px;
+}
+
+footer.main img {
+	width: 24px;
+}
+
+footer.main a {
+	display: inline-block;
+	padding: 5px 10px;
+}
+
+footer.main p {
+	font-size: 1.2rem;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+	/************ GALLERY **********/
+
+
+	#gallery .item {
+		flex: 0 1 33.333%;
+	}
+
+
+	/************ ABOUT **********/
+
+
+
+	#about img {
+		width: 70%;
+	}
+
+	#about .profile-pic {
+		float: left;
+		width: 50%;
+		padding: 15px;
+		text-align: center;
+	}
+
+	#about .description {
+		float: right;
+		width: 50%;
+		padding: 30px 15px 15px;
+	}
+
+	/************ CONTACTS **********/
+
+	#contact .info, #contact .contacts {
+		padding: 15px;
+	}
+
+
+	#contact .info {
+		float: left;
+		width: 70%;
+	}
+
+	#contact .contacts {
+		float: right;
+		width: 30%;
+	}
+
+	
+}
+
+
+@media only screen and (min-width: 992px) {
+
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	header .logo-container {
+		
+	}
+
+	nav {
+		background: #0ACE99;
+		
+	}
+
+	nav li a {
+		transition: background .3s;
+	}
+
+	nav li a:hover, nav li a.active {
+		background: #0d9b75;
+		border-radius: 3px;
+	}
+
+
+	#gallery .item {
+	 transition: opacity .3s;
+	}
+
+	#gallery .item:hover {
+	 opacity: .7;
+	}
+	
+}
+
+
+@media only screen and (max-width: 767px) {
+
+/************ GALLERY **********/
+
+	#gallery .item:nth-child(2n + 1) {
+		clear: left;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
