@@ -167,6 +167,10 @@ nav li a {
 }
 
 /****** ABOUT ********/
+#about {
+	padding: 40px 0;
+	background: #f0f0f0;
+}
 
 #about img {
 	border-radius: 100%;
@@ -174,6 +178,9 @@ nav li a {
 }
 
 /************ CONTACT **********/
+#contact {
+	padding: 40px 0;
+}
 
 #contact ul {
 	list-style-type: none;
