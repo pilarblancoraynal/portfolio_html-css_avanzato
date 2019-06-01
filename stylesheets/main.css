@@ -68,26 +68,26 @@ main {
 /*********** HEADER ***********/
 
 header {
-	background: #0ACE99;
+	background: rgba(10, 206, 153, .7); /***da Google-ColorPicker**/
 	text-align: center;
 	top: 0;
 	width: 100%;
 	z-index: 1;
+	position: fixed;
 }
 
 header .logo-container {
-	padding: 20px;
+	padding: 10px 20px;
 }
 
 header img {
-	width: 120px;
+	width: 110px;
 }
 
 /*********** NAVIGATION ***********/
 
 
 nav {
-	background: #0d9b75;
 	padding: 10px;
 }
 
@@ -114,7 +114,7 @@ nav li a {
 #hero {
 	background: url("../images/background-1.jpg") no-repeat center fixed / cover;
 	color: #ffff;
-	
+	padding-top: 70px;	
 }
 
 #hero .hero-caption {
@@ -288,11 +288,6 @@ footer.main p {
 		
 	}
 
-	nav {
-		background: #0ACE99;
-		
-	}
-
 	nav li a {
 		transition: background .3s;
 	}
@@ -310,6 +305,13 @@ footer.main p {
 	#gallery .item:hover {
 	 opacity: .7;
 	}
+	
+}
+@media only screen and (max-width: 991px) {
+
+		nav {
+			background: #0d9b75;
+		}
 	
 }
 
