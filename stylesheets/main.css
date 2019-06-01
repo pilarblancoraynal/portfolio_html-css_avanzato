@@ -126,10 +126,13 @@ nav li a {
 /************ GALLERY **********/
 
 #gallery {
-	display: flex;
-	flex-wrap: wrap;
 	padding-top: 15px;
 	padding-bottom: 15px;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
 }
 
 #gallery img {
