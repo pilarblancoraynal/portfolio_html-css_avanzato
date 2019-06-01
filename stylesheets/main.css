@@ -109,18 +109,18 @@ nav li a {
 }
 
 
+/************ HERO:INTRO-BANNER**********/
 
 #hero {
-	padding-top: 70px;
-	position: relative;
+	background: url("../images/background-1.jpg") no-repeat center fixed / cover;
+	color: #ffff;
+	
 }
 
 #hero .hero-caption {
 	text-align: center;
 	padding: 140px 20px;
 }
-
-
 
 
 /************ GALLERY **********/
@@ -169,7 +169,8 @@ nav li a {
 /****** ABOUT ********/
 #about {
 	padding: 40px 0;
-	background: #f0f0f0;
+	background: url("../images/about-1.jpg") no-repeat center fixed / cover;
+	color: #ffff;
 }
 
 #about img {
