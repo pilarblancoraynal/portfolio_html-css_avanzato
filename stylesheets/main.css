@@ -112,8 +112,8 @@ nav li a {
 /************ HERO:INTRO-BANNER**********/
 
 #hero {
-	background: url("../images/background-1.jpg") no-repeat center fixed / cover;
-	background-image: radial-gradient(circle, #ce4d09 0%, #10428c 20%, red 140%);
+	background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .1)),
+				url("../images/background-1.jpg") no-repeat center fixed / cover;
 	color: #ffff;
 	padding-top: 70px;	
 }
