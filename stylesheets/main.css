@@ -140,6 +140,11 @@ nav li a {
 	width: 100%;
 }
 
+#gallery a {
+	display:block;
+	box-shadow:10px 2px 5px rgba(0,0,0,0.2);
+}
+
 #gallery .item {
 	flex: 0 1 50%;
 	padding: 15px;
