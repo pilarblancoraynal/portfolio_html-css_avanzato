@@ -124,6 +124,13 @@ nav li a {
 	padding: 140px 20px;
 }
 
+#hero h1 {
+	text-shadow: 3px 3px 4px rgba(0,0,0,0.8);
+}
+
+#hero h2 {
+	text-shadow: 3px 3px 4px rgba(0,0,0,0.8);
+}
 
 /************ GALLERY **********/
 
