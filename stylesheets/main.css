@@ -113,6 +113,7 @@ nav li a {
 
 #hero {
 	background: url("../images/background-1.jpg") no-repeat center fixed / cover;
+	background-image: radial-gradient(circle, #ce4d09 0%, #10428c 20%, red 140%);
 	color: #ffff;
 	padding-top: 70px;	
 }
