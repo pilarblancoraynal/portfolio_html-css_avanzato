@@ -159,7 +159,6 @@ nav li a {
 	position: relative;
 }
 
-
 #gallery .caption {
 	background: #f0f0f0;
 	padding: 10px;
@@ -318,6 +317,7 @@ footer.main p {
 
 	#gallery .item:hover {
 	 opacity: .7;
+	 transform: scale(1.2) rotate(30deg); 
 	}
 	
 }
