@@ -217,6 +217,16 @@ nav li a {
 	padding: 25px 0;
 }
 
+/********** VIDEO ********/
+#video {
+	padding: 80px 80px;
+}
+
+#video video {
+	width: 100%;
+}
+
+
 /************ CONTACT **********/
 #contact {
 	padding: 40px 0;
