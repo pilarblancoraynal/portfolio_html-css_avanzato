@@ -224,8 +224,27 @@ nav li a {
 
 #video video {
 	width: 100%;
+	border-radius: 15px;
+	box-shadow: 0 0 24px rgba(0, 0, 0, .5);
+}
+#video-background {
+	position: relative;
+	overflow: hidden;
 }
 
+#video-background video {
+	position:absolute;
+	top: 50%;
+	width: 100%;
+	z-index: -10;
+	transform: translateY(-50%);
+}
+
+#video-background .caption {
+	text-align: center;
+	padding: 120px 0;
+	color: #ffff;
+}
 
 /************ CONTACT **********/
 #contact {
