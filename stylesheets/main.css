@@ -26,27 +26,40 @@ a {
 	background: #F5A623;
 	padding: 12px 24px;
 	color: #fff;
+	/***inizio:per far vedere animazioni:quadrato ***/
+	width: 100px;
+	height: 100px;
+	/*** fine:per far vedere animazioni:quadrato***/
+	width: 100px;
 	text-transform: uppercase;
-	border: 0;
-	transition: background .3s;
-	border-radius: 55px;
+	animation: animate-btn 4s ease-out alternate infinite;
 }
 
 @keyframes animate-btn {
 	0%{
 		background: #F5A623;
+		transform: rotate(0deg);
+		border-radius: 0;
 	}
 	25%{
 		background: #1eedd8;
+		transform: rotate(45deg);
+		border-radius: 50% 0 0 0;
 	}
 	50%{
 		background: #ed1eca;
+		transform: rotate(90deg);
+		border-radius: 50% 50% 0 0;
 	}
 	75%{
 		background: #22ed1e;
+		transform: rotate(135deg);
+		border-radius: 50% 50% 50% 0;
 	}
 	100%{
 		background: #ed221e;
+		transform: rotate(180deg);
+		border-radius: 50% 50% 50% 50%;
 	}
 }
 
