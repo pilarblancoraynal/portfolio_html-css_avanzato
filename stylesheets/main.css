@@ -135,18 +135,23 @@ nav li a {
 	padding: 140px 20px;
 }
 
+#hero h1 {
+	opacity: 0;
+	text-shadow: 3px 3px 4px rgba(0,0,0,0.8);
+	animation: fade-to-left .5s .6s forwards ease-in;
+}
+
+#hero h2 {
+	opacity: 0;
+	text-shadow: 3px 3px 4px rgba(0,0,0,0.8);
+	animation: fade-to-right .5s 1.4s forwards ease-in;
+}
+
 #hero .btn {
 	opacity: 0;
 	animation: fade-in .5s 2s forwards ease-in;
 }
 
-#hero h1 {
-	text-shadow: 3px 3px 4px rgba(0,0,0,0.8);
-}
-
-#hero h2 {
-	text-shadow: 3px 3px 4px rgba(0,0,0,0.8);
-}
 
 /************ GALLERY **********/
 
@@ -371,6 +376,30 @@ footer.main p {
 
 	100%{
 		opacity: 1;
+	}
+}
+
+@keyframes fade-to-left {
+	0% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+
+	100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+@keyframes fade-to-right {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	100%{
+		opacity: 1;
+		transform: translateX(0px);
 	}
 }
 
