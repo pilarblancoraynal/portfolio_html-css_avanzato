@@ -68,7 +68,7 @@ main {
 /*********** HEADER ***********/
 
 header {
-	background: rgba(10, 206, 153, .8); /***da Google-ColorPicker**/
+	background: rgba(10, 206, 153); /***da Google-ColorPicker**/
 	text-align: center;
 	top: 0;
 	width: 100%;
@@ -128,7 +128,7 @@ nav li a {
 	height: 550px;
 	top: 0;
 	z-index: -10;
-	transform: skew(0deg, -5.7deg);
+	transform: skew(0deg, -7deg);
 }
 
 #hero .hero-caption {
@@ -148,7 +148,7 @@ nav li a {
 
 #gallery {
 	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-bottom: 80px;
 }
 
 .gallery {
@@ -198,7 +198,7 @@ nav li a {
 
 /****** ABOUT ********/
 #about {
-	padding: 40px 0;
+	padding: 40px 70px;
 	background: url("../images/about-1.jpg") no-repeat center fixed / cover;
 	color: #ffff;
 }
@@ -308,7 +308,7 @@ footer.main p {
 
 @media only screen and (min-width: 992px) {
 
-	header {
+	.header {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
