@@ -68,13 +68,14 @@ main {
 /*********** HEADER ***********/
 
 header {
-	background: rgba(10, 206, 153, .7); /***da Google-ColorPicker**/
+	background: rgba(10, 206, 153, .8); /***da Google-ColorPicker**/
 	text-align: center;
 	top: 0;
 	width: 100%;
 	z-index: 1;
 	position: fixed;
 	box-shadow: 0 3px 2px rgba(0,0,0,0.5);
+	padding-bottom: 0.5%
 }
 
 header .logo-container {
@@ -113,10 +114,21 @@ nav li a {
 /************ HERO:INTRO-BANNER**********/
 
 #hero {
+	color: #ffff;
+	padding-top: 70px;
+	position: relative;	
+}
+
+#hero:after {
 	background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .1)),
 				url("../images/background-1.jpg") no-repeat center fixed / cover;
-	color: #ffff;
-	padding-top: 70px;	
+	position: absolute;
+	content:'';
+	width: 100%;
+	height: 550px;
+	top: 0;
+	z-index: -10;
+	transform: skew(0deg, -5.7deg);
 }
 
 #hero .hero-caption {
@@ -142,6 +154,11 @@ nav li a {
 .gallery {
 	display: flex;
 	flex-wrap: wrap;
+	background: #ffff;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0 0 24px rgba(0,0,0, .5);
+	margin-top: -60px;
 }
 
 #gallery img {
