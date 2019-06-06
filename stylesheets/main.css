@@ -30,7 +30,24 @@ a {
 	border: 0;
 	transition: background .3s;
 	border-radius: 55px;
-	transition: all 1s ease-out;
+}
+
+@keyframes animate-btn {
+	0%{
+		background: #F5A623;
+	}
+	25%{
+		background: #1eedd8;
+	}
+	50%{
+		background: #ed1eca;
+	}
+	75%{
+		background: #22ed1e;
+	}
+	100%{
+		background: #ed221e;
+	}
 }
 
 
